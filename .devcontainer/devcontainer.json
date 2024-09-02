@@ -1,6 +1,6 @@
 {
     "name": "Web & ELK Dev Container",
-    "dockerFile": "Dockerfile",
+    "dockerComposeFile": "../docker-compose.yml",
     "appPort": [80, 9200, 9300, 5601],
     "runArgs": ["--privileged"],
 
@@ -11,6 +11,4 @@
     "extensions": [
         "ms-azuretools.vscode-docker"
     ],
-
-    "postCreateCommand": "docker-compose -f /workspace/elk/docker-compose.yml up -d"
 }
